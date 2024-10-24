@@ -83,5 +83,5 @@ Feel free to submit issues, fork the repository, and create pull requests for an
 
 ## Credits
 
-- Based on the Marble GNOME Shell Theme
-- Uses pywal for color palette generation
+- Based on the Marble [GNOME Shell Theme](https://github.com/imarkoff/Marble-shell-theme)
+- Uses [pywal](https://github.com/dylanaraps/pywal) for color palette generation
