@@ -1,6 +1,6 @@
 # Chromaflow - A Wallpaper Color Picker for Marble Shell Theme
 
-A GUI tool that extracts colors from your wallpaper and applies them to the Marble GNOME Shell theme. This tool helps you create a cohesive desktop experience by matching your shell theme colors with your wallpaper.
+A GUI tool that extracts colors from your wallpaper and applies them to the [Marble GNOME Shell theme](https://github.com/imarkoff/Marble-shell-theme). This tool helps you create a cohesive desktop experience by matching your shell theme colors with your wallpaper.
 
 ## Features
 
@@ -79,9 +79,9 @@ After running the script:
 Feel free to submit issues, fork the repository, and create pull requests for any improvements.
 
 ## Future Additions
-- Maybe a listener that automatically runs the script when you change your wallpaper idk
+- A listener that automatically runs the script when you change your wallpaper and selects a random color.
 
 ## Credits
 
-- Based on the Marble [GNOME Shell Theme](https://github.com/imarkoff/Marble-shell-theme)
+- Based on the [Marble GNOME Shell Theme](https://github.com/imarkoff/Marble-shell-theme)
 - Uses [pywal](https://github.com/dylanaraps/pywal) for color palette generation
