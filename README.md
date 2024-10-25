@@ -7,8 +7,7 @@ A GUI tool that extracts colors from your wallpaper and applies them to the [Mar
 - Interactive color picker with wallpaper preview
 - Integration with pywal color palette
 - Real-time color preview
-- Support for both light and dark theme modes
-- Option for more vibrant accent colors
+- All options from marble shell's intallation tweaks
 - Skibidi GUI
 
 ## Screenshot
@@ -19,10 +18,12 @@ A GUI tool that extracts colors from your wallpaper and applies them to the [Mar
 - Python 3.6+
 - Marble Shell Theme
 - pywal
-- Required Python packages:
-  ```bash
-  pip install pillow PyQt5
-  ```
+- PyQt5
+
+You can install these packages with this command:
+```bash
+pip install pywal PyQt5
+```
 
 ## Installation
 
@@ -45,10 +46,14 @@ python chromaflow.py --wallpaper /path/to/your/wallpaper.jpg
 
 Full options:
 ```bash
-python color_picker.py --wallpaper /path/to/your/wallpaper.jpg \
-                      --colors-path ./colors.json \
-                      --mode dark \
-                      --filled
+python chromaflow.py --wallpaper /path/to/your/wallpaper.jpg \
+                     --colors-path ./colors.json \
+                     --mode dark \
+                     --filled \
+                     --name custom-theme \
+                     --opaque \
+                     --launchpad \
+                     --panel_default_size
 ```
 
 ### Arguments
@@ -57,6 +62,14 @@ python color_picker.py --wallpaper /path/to/your/wallpaper.jpg \
 - `--colors-path`: Path to Marble theme's colors.json (default: ./colors.json)
 - `--mode`: Theme mode, either 'light' or 'dark' (default: dark)
 - `--filled`: Use more vibrant accent colors (optional)
+- `--name`: Custom name for the theme (default: generated from wallpaper name and color)
+- `-O, --opaque`: Make background color opaque (default: translucent)
+- `--launchpad`: Change Show Apps icon to macOS Launchpad icon
+
+#### Panel Customization
+- `-Pds, --panel_default_size`: Set default panel size
+- `-Pnp, --panel_no_pill`: Remove panel button background
+- `-Ptc, --panel_text_color`: Set panel text color
 
 ## How to Use
 
@@ -72,7 +85,7 @@ python color_picker.py --wallpaper /path/to/your/wallpaper.jpg \
 After running the script:
 1. Open the Extensions app
 2. Go to 'User Themes' settings
-3. Select 'Marble-extracted-dark' (or light) from the dropdown
+3. Select your theme from the dropdown (default name combines wallpaper name and color)
 
 ## Contributing
 
